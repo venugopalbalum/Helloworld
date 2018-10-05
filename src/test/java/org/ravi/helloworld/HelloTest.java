@@ -30,14 +30,14 @@ public class HelloTest {
 	public void f() {
 
 		//text = driver.findElement(By.xpath("html/body/h2"));
-		Assert.assertEquals(driver.getTitle(), "Hello World");
+		Assert.assertEquals(text.getText(), "Hello World");
 		System.out.println("Test Passed");
 
 	}
 
 	@AfterTest
 	public void afterTest() {
-		//driver.close();
+		driver.close();
 	}
 
 
